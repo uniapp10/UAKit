@@ -1,0 +1,6 @@
+use_frameworks!
+target 'UAKit_Tests' do
+  pod 'UAKit', :path => '../'
+  
+  
+end
