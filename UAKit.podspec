@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'UAKit'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of UAKit.'
+  s.summary          = 'Use to create app base rapidly.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+UAKit
                        DESC
 
   s.homepage         = 'https://github.com/uniapp10/UAKit'
@@ -31,6 +31,24 @@ TODO: Add long description of the pod here.
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'UAKit/Classes/**/*'
+
+  s.subspec 'Category' do |wh|
+    wh.source_files = "UAKit/Category/**/*.{h,m,pch,swift}"
+    wh.public_header_files = "Base/**/*.{h}"
+    #wh.resource_bundles = {'WindHUD' => ['CommonLibSDK/Resources/WindHUD/WindHUD.bundle/{*,.*}']}
+    #wh.framework = 'QuartzCore'
+    wh.framework = 'UIKit', 'Foundation'
+    wh.requires_arc = true
+  end
+
+  s.subspec 'Base' do |wh|
+    wh.source_files = "UAKit/Base/**/*.{h,m,pch,swift}"
+    wh.public_header_files = "Base/**/*.{h}"
+    #wh.resource_bundles = {'WindHUD' => ['CommonLibSDK/Resources/WindHUD/WindHUD.bundle/{*,.*}']}
+    #wh.framework = 'QuartzCore'
+    wh.framework = 'UIKit', 'Foundation'
+    wh.requires_arc = true
+  end
   
   # s.resource_bundles = {
   #   'UAKit' => ['UAKit/Assets/*.png']
