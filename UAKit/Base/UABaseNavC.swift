@@ -9,11 +9,11 @@
 import UIKit
 
 // 开启全局返回手势后，navigationBar 的显示/隐藏需要调用 setNavigationBarHidden 方法
-class UABaseNavC: UINavigationController {
+public class UABaseNavC: UINavigationController {
     
     var panGesture: UIPanGestureRecognizer!
     
-    override func viewDidLoad() {
+    override public func viewDidLoad() {
         super.viewDidLoad()
 
         navigationBar.isTranslucent = false
@@ -38,7 +38,7 @@ class UABaseNavC: UINavigationController {
         interactivePopGestureRecognizer?.isEnabled = false
     }
     
-    override func pushViewController(_ viewController: UIViewController, animated: Bool) {
+    override public func pushViewController(_ viewController: UIViewController, animated: Bool) {
         viewController.hidesBottomBarWhenPushed = true
         super.pushViewController(viewController, animated: true)
     }
@@ -51,7 +51,7 @@ extension UABaseNavC: UIGestureRecognizerDelegate {
 //        return true
 //    }
 
-    open func gestureRecognizerShouldBegin(_ gestureRecognizer: UIGestureRecognizer) -> Bool {
+    public func gestureRecognizerShouldBegin(_ gestureRecognizer: UIGestureRecognizer) -> Bool {
         //处理左滑冲突
         if gestureRecognizer == panGesture {
             let point = (gestureRecognizer as! UIPanGestureRecognizer).translation(in: gestureRecognizer.view)

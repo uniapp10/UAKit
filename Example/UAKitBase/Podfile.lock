@@ -1,3 +1,20 @@
-PODFILE CHECKSUM: 2c56fc81af5b0ebe48b78196fbcad374418e2bc6
+PODS:
+  - UAKit (0.1.0):
+    - UAKit/Base (= 0.1.0)
+    - UAKit/Category (= 0.1.0)
+  - UAKit/Base (0.1.0)
+  - UAKit/Category (0.1.0)
+
+DEPENDENCIES:
+  - UAKit (from `../../`)
+
+EXTERNAL SOURCES:
+  UAKit:
+    :path: "../../"
+
+SPEC CHECKSUMS:
+  UAKit: 828ddb129f509dc55d08a3130b896113e3debf5a
+
+PODFILE CHECKSUM: 30d69fc70c426f024d5b25aa7d2c57385b35b706
 
 COCOAPODS: 1.8.4

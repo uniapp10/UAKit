@@ -35,18 +35,15 @@ UAKit
   s.subspec 'Category' do |wh|
     wh.source_files = "UAKit/Category/**/*.{h,m,pch,swift}"
     wh.public_header_files = "Base/**/*.{h}"
-    #wh.resource_bundles = {'WindHUD' => ['CommonLibSDK/Resources/WindHUD/WindHUD.bundle/{*,.*}']}
-    #wh.framework = 'QuartzCore'
-    wh.framework = 'UIKit', 'Foundation'
+    wh.frameworks = 'UIKit', 'Foundation'
     wh.requires_arc = true
   end
 
   s.subspec 'Base' do |wh|
     wh.source_files = "UAKit/Base/**/*.{h,m,pch,swift}"
     wh.public_header_files = "Base/**/*.{h}"
-    #wh.resource_bundles = {'WindHUD' => ['CommonLibSDK/Resources/WindHUD/WindHUD.bundle/{*,.*}']}
-    #wh.framework = 'QuartzCore'
-    wh.framework = 'UIKit', 'Foundation'
+    wh.resource_bundles = {'base' => ['UAKit/Base/base.bundle/{*,.*}']}
+    wh.frameworks = 'UIKit', 'Foundation'
     wh.requires_arc = true
   end
   

@@ -35,8 +35,11 @@ class UABaseVC: UIViewController, UABaseVCProtocol, UATableProtocol {
         
         backBtn = UIButton(frame: CGRect(x: 0, y: 0, width: 60, height: 40))
         backBtn.contentHorizontalAlignment = .left
-        let image = R.image.nav_back()
-        backBtn.setImage(image, for: .normal)
+        let bundle = Bundle(for: UABaseVC.self)
+        if let url = bundle.url(forResource: "base", withExtension: "bundle"), let imageBundle = Bundle(url: url) {
+            let image = UIImage(contentsOfFile: imageBundle.path(forResource: "nav_back@2x", ofType: "png") ?? "")
+            backBtn.setImage(image, for: .normal)
+        }
         backBtn.addTarget(self, action: #selector(backBtnAction), for: .touchUpInside)
         self.navigationItem.leftBarButtonItem = UIBarButtonItem(customView: backBtn)
         
