@@ -9,14 +9,14 @@
 import Foundation
 import UIKit
 
-enum FontStyle: String {
+public enum FontStyle: String {
     case PingFang_Regular = "PingFangSC-Regular"
     case PingFang_Medium = "PingFangSC-Medium"
     case PingFang_Semibold = "PingFangSC-Semibold"
     case PingFang_Light = "PingFangSC-Light"
 }
 
-extension UIFont {
+public extension UIFont {
     class func font(_ style:FontStyle, size: CGFloat) -> UIFont {
         return UIFont(name: style.rawValue, size: Scale(size))!
     }

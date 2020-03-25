@@ -8,7 +8,7 @@
 
 import UIKit
 
-extension NSObject {
+public extension NSObject {
     
     func getPorpertyNames<T>(clazz: T) -> [String] {
         var count: UInt32 = 0
@@ -19,6 +19,31 @@ extension NSObject {
             let name = String.init(cString: nameP)
             res.append(name)
         }
+        free(ivars)
+        return res
+    }
+    
+    /// 获取类实例的方法列表，swift4.0 以上需要在类上加关键字 @objcMemember
+    /// - Parameter clazz: 传入类型
+    func getMethodNames<T>(clazz: T) -> [String] {
+        var count: UInt32 = 0
+        let methodList = class_copyMethodList(clazz as? AnyClass, &count)!
+        var res = [String]()
+        for i in 0..<count {
+            let method = methodList[Int(i)]
+            let name: Selector = method_getName(method)
+            let name_s = sel_getName(name)
+            let name_s_str = String(cString: name_s, encoding: .utf8) ?? ""
+            #if DEBUG
+            let imp = method_getImplementation(method)
+            let param_count = method_getNumberOfArguments(method)
+            let encoding = method_getTypeEncoding(method)
+            let encoding_str = String(cString: encoding!, encoding: .utf8) ?? ""
+            print("name_m:\(name), imp:\(imp), param_count:\(param_count), encoding:\(encoding_str), name_s:\(name_s_str)")
+            #endif
+            res.append(name_s_str)
+        }
+        free(methodList)
         return res
     }
     

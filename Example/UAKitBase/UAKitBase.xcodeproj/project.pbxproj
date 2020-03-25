@@ -3,23 +3,29 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		F3788264BAF56AA1ED66A419 /* Pods_UAKitBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4073AB789C780E58B03695ED /* Pods_UAKitBase.framework */; };
+		FC2999D3242A39C8000C3402 /* Safe(+).swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2999D2242A39C8000C3402 /* Safe(+).swift */; };
+		FC2999D4242A39C8000C3402 /* AppInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2999D1242A39C7000C3402 /* AppInfo.swift */; };
 		FC4989272420B560001A3BD8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4989262420B560001A3BD8 /* AppDelegate.swift */; };
 		FC4989292420B560001A3BD8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4989282420B560001A3BD8 /* SceneDelegate.swift */; };
 		FC49892B2420B560001A3BD8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC49892A2420B560001A3BD8 /* ViewController.swift */; };
 		FC49892E2420B560001A3BD8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC49892C2420B560001A3BD8 /* Main.storyboard */; };
 		FC4989302420B561001A3BD8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC49892F2420B561001A3BD8 /* Assets.xcassets */; };
 		FC4989332420B561001A3BD8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC4989312420B561001A3BD8 /* LaunchScreen.storyboard */; };
+		FC49897B2420F866001A3BD8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC49897A2420F866001A3BD8 /* ContentView.swift */; };
+		FC49897D24220317001A3BD8 /* SecondVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC49897C24220317001A3BD8 /* SecondVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4073AB789C780E58B03695ED /* Pods_UAKitBase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UAKitBase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		99B95C91266E121434498813 /* Pods-UAKitBase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UAKitBase.release.xcconfig"; path = "Target Support Files/Pods-UAKitBase/Pods-UAKitBase.release.xcconfig"; sourceTree = "<group>"; };
 		E8F1EDD7189B8ED4842FFEAD /* Pods-UAKitBase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UAKitBase.debug.xcconfig"; path = "Target Support Files/Pods-UAKitBase/Pods-UAKitBase.debug.xcconfig"; sourceTree = "<group>"; };
+		FC2999D1242A39C7000C3402 /* AppInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInfo.swift; sourceTree = "<group>"; };
+		FC2999D2242A39C8000C3402 /* Safe(+).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Safe(+).swift"; sourceTree = "<group>"; };
 		FC4989232420B560001A3BD8 /* UAKitBase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UAKitBase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC4989262420B560001A3BD8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FC4989282420B560001A3BD8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -28,6 +34,8 @@
 		FC49892F2420B561001A3BD8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FC4989322420B561001A3BD8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FC4989342420B561001A3BD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC49897A2420F866001A3BD8 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FC49897C24220317001A3BD8 /* SecondVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,8 +91,12 @@
 				FC4989262420B560001A3BD8 /* AppDelegate.swift */,
 				FC4989282420B560001A3BD8 /* SceneDelegate.swift */,
 				FC49892A2420B560001A3BD8 /* ViewController.swift */,
+				FC49897C24220317001A3BD8 /* SecondVC.swift */,
+				FC49897A2420F866001A3BD8 /* ContentView.swift */,
 				FC49892C2420B560001A3BD8 /* Main.storyboard */,
 				FC49892F2420B561001A3BD8 /* Assets.xcassets */,
+				FC2999D2242A39C8000C3402 /* Safe(+).swift */,
+				FC2999D1242A39C7000C3402 /* AppInfo.swift */,
 				FC4989312420B561001A3BD8 /* LaunchScreen.storyboard */,
 				FC4989342420B561001A3BD8 /* Info.plist */,
 			);
@@ -207,8 +219,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC49892B2420B560001A3BD8 /* ViewController.swift in Sources */,
+				FC49897D24220317001A3BD8 /* SecondVC.swift in Sources */,
 				FC4989272420B560001A3BD8 /* AppDelegate.swift in Sources */,
+				FC2999D3242A39C8000C3402 /* Safe(+).swift in Sources */,
+				FC49897B2420F866001A3BD8 /* ContentView.swift in Sources */,
 				FC4989292420B560001A3BD8 /* SceneDelegate.swift in Sources */,
+				FC2999D4242A39C8000C3402 /* AppInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,13 +369,17 @@
 			baseConfigurationReference = E8F1EDD7189B8ED4842FFEAD /* Pods-UAKitBase.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = 3GE4G86BZ9;
 				INFOPLIST_FILE = UAKitBase/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.zhudong10.UAKitBase;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -372,13 +392,17 @@
 			baseConfigurationReference = 99B95C91266E121434498813 /* Pods-UAKitBase.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = 3GE4G86BZ9;
 				INFOPLIST_FILE = UAKitBase/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.zhudong10.UAKitBase;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

@@ -20,9 +20,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         } else {
             let vc = ViewController()
             let nav = UABaseNavC(rootViewController: vc)
-            self.window = UIWindow.init(frame: UIScreen.main.bounds)
-            self.window?.rootViewController = nav
-            self.window?.makeKeyAndVisible()
+            window = UIWindow.init(frame: UIScreen.main.bounds)
+            window?.backgroundColor = .white
+            window?.rootViewController = nav
+            
+            window?.makeKeyAndVisible()
         }
         return true
     }

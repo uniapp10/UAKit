@@ -12,10 +12,10 @@ let ScreenSize = UIScreen.main.bounds.size
 let ScreenWidth = ScreenSize.width
 let ScreenHeight = ScreenSize.height
 
-func Scale(_ width: CGFloat) -> CGFloat {
+public func Scale(_ width: CGFloat) -> CGFloat {
     return width * ScreenWidth / 375.0
 }
 
-func ScaleH(_ height: CGFloat) -> CGFloat {
+public func ScaleH(_ height: CGFloat) -> CGFloat {
     return height * ScreenHeight / 667.0
 }

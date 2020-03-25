@@ -22,13 +22,13 @@ public protocol UATableProtocol {
     var data: [TableCellModel] { get set }
 }
 
-class UABaseVC: UIViewController, UABaseVCProtocol, UATableProtocol {
+open class UABaseVC: UIViewController, UABaseVCProtocol, UATableProtocol {
     
     public var table: Table!
     public var data: [TableCellModel] = []
     public var backBtn: UIButton!
     
-    override func viewDidLoad() {
+    open override func viewDidLoad() {
         super.viewDidLoad()
 
         view.backgroundColor = .white
