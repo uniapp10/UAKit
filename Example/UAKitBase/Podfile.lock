@@ -1,27 +1,60 @@
 PODS:
+  - lottie-ios (3.1.6)
+  - Protobuf (3.11.4)
+  - SDWebImage (5.5.2):
+    - SDWebImage/Core (= 5.5.2)
+  - SDWebImage/Core (5.5.2)
   - SnapKit (5.0.1)
+  - SSZipArchive (1.8.1)
+  - SVGAPlayer (2.3.0):
+    - SVGAPlayer/Core (= 2.3.0)
+    - SVGAPlayer/ProtoFiles (= 2.3.0)
+  - SVGAPlayer/Core (2.3.0):
+    - SSZipArchive (= 1.8.1)
+    - SVGAPlayer/ProtoFiles
+  - SVGAPlayer/ProtoFiles (2.3.0):
+    - Protobuf (~> 3.4)
   - UAKit (0.1.0):
+    - UAKit/Animation (= 0.1.0)
     - UAKit/Base (= 0.1.0)
     - UAKit/Category (= 0.1.0)
+  - UAKit/Animation (0.1.0):
+    - lottie-ios (= 3.1.6)
   - UAKit/Base (0.1.0)
   - UAKit/Category (0.1.0)
+  - URLNavigator (2.3.0)
 
 DEPENDENCIES:
+  - SDWebImage (= 5.5.2)
   - SnapKit (= 5.0.1)
+  - SVGAPlayer (= 2.3)
   - UAKit (from `../../`)
+  - URLNavigator (= 2.3.0)
 
 SPEC REPOS:
   trunk:
+    - lottie-ios
+    - Protobuf
+    - SDWebImage
     - SnapKit
+    - SSZipArchive
+    - SVGAPlayer
+    - URLNavigator
 
 EXTERNAL SOURCES:
   UAKit:
     :path: "../../"
 
 SPEC CHECKSUMS:
+  lottie-ios: 85ce835dd8c53e02509f20729fc7d6a4e6645a0a
+  Protobuf: 176220c526ad8bd09ab1fb40a978eac3fef665f7
+  SDWebImage: 4d5c027c935438f341ed33dbac53ff9f479922ca
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
-  UAKit: 828ddb129f509dc55d08a3130b896113e3debf5a
+  SSZipArchive: 04547dfa448be5ed7ecbaf7eaf8a6e9eb9b42997
+  SVGAPlayer: 39ad3d16643d8c63d62bd8a3decc0de4bc9b66c4
+  UAKit: 337b6e78336ea321c1cc8275f92c4b2cda983a2f
+  URLNavigator: 2593c0e2d293732ec5c44503cf54dceba1a68085
 
-PODFILE CHECKSUM: 771d80913ba67c1a134b9325548b942def071a26
+PODFILE CHECKSUM: c803b3ac21f3a41af3335fe503b49d88d1995529
 
 COCOAPODS: 1.8.4

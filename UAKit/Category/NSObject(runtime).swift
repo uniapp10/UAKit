@@ -10,6 +10,8 @@ import UIKit
 
 public extension NSObject {
     
+    /// 获取类属性列表（不含父类）
+    /// - Parameter clazz: 需要查找的类
     func getPorpertyNames<T>(clazz: T) -> [String] {
         var count: UInt32 = 0
         let ivars = class_copyIvarList(clazz as? AnyClass, &count)!
@@ -23,7 +25,7 @@ public extension NSObject {
         return res
     }
     
-    /// 获取类实例的方法列表，swift4.0 以上需要在类上加关键字 @objcMemember
+    /// 获取类实例的方法列表(不含父类)，swift4.0 以上需要在类上加关键字 @objcMemember
     /// - Parameter clazz: 传入类型
     func getMethodNames<T>(clazz: T) -> [String] {
         var count: UInt32 = 0
@@ -45,6 +47,23 @@ public extension NSObject {
         }
         free(methodList)
         return res
+    }
+    
+    func getClassList(pro: Protocol) {
+        let typeCount = Int(objc_getClassList(nil, 0))
+        let types = UnsafeMutablePointer<AnyClass>.allocate(capacity: typeCount)
+        let autoreleasingTypes = AutoreleasingUnsafeMutablePointer<AnyClass>(types)
+        objc_getClassList(autoreleasingTypes, Int32(typeCount))
+        print(types)
+       
+//        var classes = [AnyClass]()
+//        for i in 0 ..< actualClassCount {
+//            if let currentClass: AnyClass = allClasses[Int(i)] {
+//                classes.append(currentClass)
+//            }
+//        }
+//        
+//        return classes
     }
     
 }

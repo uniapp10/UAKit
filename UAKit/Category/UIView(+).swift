@@ -12,7 +12,7 @@ import UIKit
 var tapActionKey = 100
 var tapGestureKey = 101
 
-extension UIView {
+public extension UIView {
     
     typealias TapAction = () -> ()
     var tapAction: TapAction {

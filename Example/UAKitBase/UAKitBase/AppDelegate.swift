@@ -18,7 +18,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if #available(iOS 13,*) {
             print("ios13")
         } else {
-            let vc = ViewController()
+            UANavigatorMap.initialize(navigator: navigator)
+            let vc = UATableVC()
+//            let vc = UASplashVC()
             let nav = UABaseNavC(rootViewController: vc)
             window = UIWindow.init(frame: UIScreen.main.bounds)
             window?.backgroundColor = .white
@@ -28,6 +30,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
         return true
     }
+    
+    func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
+        print(url)
+        print(options)
+        print(url.scheme)
+        print(url.query)
+        
+        let params_1 = options[UIApplication.OpenURLOptionsKey.sourceApplication]
+        let params = options[UIApplication.OpenURLOptionsKey.annotation]
+        print(params_1)
+        print(params)
+        let view = UIAlertView(title: url.scheme, message: url.query, delegate: nil, cancelButtonTitle: "ok")
+        view.show()
+        return false
+    }
+    
+//    func application(_ application: UIApplication, handleOpen url: URL) -> Bool {
+//        return false
+//    }
 
 }
 

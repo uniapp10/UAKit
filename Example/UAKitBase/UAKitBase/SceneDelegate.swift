@@ -24,10 +24,14 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window = UIWindow(windowScene: windowScene)
         window?.frame = UIScreen.main.bounds
         window?.backgroundColor = .white
-        let vc = ViewController()
+//        let vc = ViewController()
+//        let nav = UABaseNavC(rootViewController: vc)
+        let vc = UATableVC()
         let nav = UABaseNavC(rootViewController: vc)
+        UANavigatorMap.initialize(navigator: navigator)
         window?.rootViewController = nav
         window?.makeKeyAndVisible()
+                
         
         
 //        SwiftUI

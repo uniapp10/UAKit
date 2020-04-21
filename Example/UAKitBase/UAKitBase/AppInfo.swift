@@ -8,7 +8,9 @@
 import Foundation
 import UIKit
 
+/// 获取App相关的信息，如版本，启动图，App名称等
 class UAAppInfo: NSObject {
+    static let shared = UAAppInfo()
     
     public func getVersion() -> String {
         let obj = infoDictionary["CFBundleShortVersionString"] as! String

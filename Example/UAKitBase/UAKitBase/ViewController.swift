@@ -41,9 +41,9 @@ class ViewController: UIViewController {
     @objc
     func rightBtnClick() -> Void {
                        
-//        let res2 = getPorpertyNames(clazz: Person.self)
+//        let res2 = getPorpertyNames(clazz: Man.self)
 //        print("\(res2)")
-//        let res = getMethodNames(clazz: Person.self)
+//        let res = getMethodNames(clazz: Man.self)
 //        print("\(res)")
 //        let secondVC = SecondVC()
 //        navigationController?.pushViewController(secondVC, animated: true)
@@ -61,16 +61,82 @@ class ViewController: UIViewController {
 //        }
         
 //        Test().foo() // bar new
-        UASafeTool.isJailBroken()
+//        UASafeTool.isJailBroken()
 //        UAAppInfo.getVerssion()
 //        UAAppInfo().getIconImage()
 //        UAAppInfo().getLaunchImage()
+//        getClassList(pro: Person2.self)
+//        getClassList(protocol: Person2.self)
+        // This does not work
+        let walkers = classesConformingToProtocol(Walker.self)
+        let runners = classesConformingToProtocol(Runner.self)
+//        classesConformingToProtocol()
     }
     
+    @objc func classesConformingToProtocol(_ proto: Protocol) -> [AnyClass]
+    {
+        let availableClasses : [AnyClass] = [ Zombie.self, Survivor.self ]
+
+        var conformingClasses = Array<AnyClass>()
+
+        for myClass : AnyClass in availableClasses
+        {
+//            let protoc = proto.self as! NSObjectProtocol
+            
+//            if (myClass is proto.self) {
+//                 conformingClasses.append(myClass)
+//            }
+            if myClass.conforms(to: proto) {
+            
+//            if let res = myClass as? Zombie.Type {
+                conformingClasses.append(myClass)
+            }
+           
+           print(proto)
+        }
+
+        return conformingClasses
+    }
+
     
 
 }
 
+@objc protocol Walker: NSObjectProtocol
+{
+    func walk()
+}
+
+@objc protocol Runner: NSObjectProtocol
+{
+    func run()
+}
+
+@objc class Zombie : NSObject,Walker
+{
+    func walk () { print("Brains...") }
+}
+
+@objc class Survivor : NSObject,Runner
+{
+    func run() { print("Aaaah, zombies!") }
+}
+
+
+
+@objc protocol Person2 {
+    var name: String { get set }
+    var age: Int { get set }
+    func speak()
+}
+
+class MyPerson2: Person2 {
+    var name: String = "zhu"
+    var age: Int = 10
+    func speak() {
+        print("speak")
+    }
+}
 
 class Test {
     dynamic func foo() {
@@ -93,6 +159,18 @@ extension Test {
     }
     
     class func run() {
+        print("run run run")
+    }
+}
+
+class Man: Person {
+    var sex: String?
+    
+    func speakSex(_ sex: String) {
+        print("i am a \(sex)")
+    }
+    
+    class func driver() {
         print("run run run")
     }
 }

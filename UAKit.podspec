@@ -28,7 +28,7 @@ UAKit
   s.source           = { :git => 'https://github.com/uniapp10/UAKit.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '9.0'
 
   s.source_files = 'UAKit/Classes/**/*'
 
@@ -39,11 +39,19 @@ UAKit
     wh.requires_arc = true
   end
 
+  s.subspec 'Animation' do |wh|
+    wh.source_files = "UAKit/Animation/**/*.{h,m,pch,swift}"
+    wh.public_header_files = "Animation/**/*.{h}"
+    wh.frameworks = 'UIKit', 'Foundation'
+    wh.requires_arc = true
+    wh.dependency 'lottie-ios', '3.1.6'
+  end
+
   s.subspec 'Base' do |wh|
     wh.source_files = "UAKit/Base/**/*.{h,m,pch,swift}"
     wh.public_header_files = "Base/**/*.{h}"
     wh.resource_bundles = {'base' => ['UAKit/Base/base.bundle/{*,.*}']}
-    wh.frameworks = 'UIKit', 'Foundation'
+    wh.frameworks = 'UIKit', 'Foundation'    
     wh.requires_arc = true
   end
   

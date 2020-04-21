@@ -1,8 +1,8 @@
 //
-//  Dimension.swift
-//  SimilarPro
+//  UADimensions.swift
+//  UAKitBase
 //
-//  Created by ZD on 2020/2/26.
+//  Created by ZD on 2020/4/18.
 //  Copyright © 2020 ZD. All rights reserved.
 //
 

@@ -19,7 +19,7 @@ public enum TableActionType: String {
     case selected
 }
 
-public class TableCell: UITableViewCell {
+open class TableCell: UITableViewCell {
     
     public var action: ((String, Any?, IndexPath?) -> ())?
     public var indexPath: IndexPath!
@@ -52,7 +52,7 @@ public class TableCell: UITableViewCell {
         
     }
     
-    required init?(coder: NSCoder) {
+    required public init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 }

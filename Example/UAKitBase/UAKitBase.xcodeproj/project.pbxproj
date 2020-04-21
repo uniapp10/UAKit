@@ -8,8 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		F3788264BAF56AA1ED66A419 /* Pods_UAKitBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4073AB789C780E58B03695ED /* Pods_UAKitBase.framework */; };
+		FC25F9CA24446536008691DD /* globalLoadingAnimation.json in Resources */ = {isa = PBXBuildFile; fileRef = FC25F9C724446536008691DD /* globalLoadingAnimation.json */; };
+		FC25F9CB24446536008691DD /* globalLoadingAnimation_0.png in Resources */ = {isa = PBXBuildFile; fileRef = FC25F9C924446536008691DD /* globalLoadingAnimation_0.png */; };
+		FC25F9CF24448C9A008691DD /* UAAnimationSVG.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC25F9CE24448C9A008691DD /* UAAnimationSVG.swift */; };
+		FC25F9DD244AD8C0008691DD /* UASplashVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC25F9DC244AD8C0008691DD /* UASplashVC.swift */; };
+		FC25F9DF244ADAA0008691DD /* UADimensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC25F9DE244ADAA0008691DD /* UADimensions.swift */; };
+		FC27EB49244F00E500EFA5CE /* UATimerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC27EB48244F00E500EFA5CE /* UATimerVC.swift */; };
 		FC2999D3242A39C8000C3402 /* Safe(+).swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2999D2242A39C8000C3402 /* Safe(+).swift */; };
 		FC2999D4242A39C8000C3402 /* AppInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2999D1242A39C7000C3402 /* AppInfo.swift */; };
+		FC432C232437756E00070214 /* UATableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC432C222437756E00070214 /* UATableVC.swift */; };
+		FC432C25243787A200070214 /* UANavigatorMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC432C24243787A200070214 /* UANavigatorMap.swift */; };
+		FC432C27243788D400070214 /* UAWebVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC432C26243788D400070214 /* UAWebVC.swift */; };
+		FC432C2B24383A2600070214 /* UARepoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC432C2A24383A2600070214 /* UARepoVC.swift */; };
+		FC432C3024384CD600070214 /* HTTP.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC432C2F24384CD600070214 /* HTTP.swift */; };
+		FC432C32243850D200070214 /* GitHub.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC432C31243850D200070214 /* GitHub.swift */; };
 		FC4989272420B560001A3BD8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4989262420B560001A3BD8 /* AppDelegate.swift */; };
 		FC4989292420B560001A3BD8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4989282420B560001A3BD8 /* SceneDelegate.swift */; };
 		FC49892B2420B560001A3BD8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC49892A2420B560001A3BD8 /* ViewController.swift */; };
@@ -24,8 +36,20 @@
 		4073AB789C780E58B03695ED /* Pods_UAKitBase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UAKitBase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		99B95C91266E121434498813 /* Pods-UAKitBase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UAKitBase.release.xcconfig"; path = "Target Support Files/Pods-UAKitBase/Pods-UAKitBase.release.xcconfig"; sourceTree = "<group>"; };
 		E8F1EDD7189B8ED4842FFEAD /* Pods-UAKitBase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UAKitBase.debug.xcconfig"; path = "Target Support Files/Pods-UAKitBase/Pods-UAKitBase.debug.xcconfig"; sourceTree = "<group>"; };
+		FC25F9C724446536008691DD /* globalLoadingAnimation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = globalLoadingAnimation.json; sourceTree = "<group>"; };
+		FC25F9C924446536008691DD /* globalLoadingAnimation_0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = globalLoadingAnimation_0.png; sourceTree = "<group>"; };
+		FC25F9CE24448C9A008691DD /* UAAnimationSVG.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UAAnimationSVG.swift; sourceTree = "<group>"; };
+		FC25F9DC244AD8C0008691DD /* UASplashVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UASplashVC.swift; sourceTree = "<group>"; };
+		FC25F9DE244ADAA0008691DD /* UADimensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UADimensions.swift; sourceTree = "<group>"; };
+		FC27EB48244F00E500EFA5CE /* UATimerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UATimerVC.swift; sourceTree = "<group>"; };
 		FC2999D1242A39C7000C3402 /* AppInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInfo.swift; sourceTree = "<group>"; };
 		FC2999D2242A39C8000C3402 /* Safe(+).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Safe(+).swift"; sourceTree = "<group>"; };
+		FC432C222437756E00070214 /* UATableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UATableVC.swift; sourceTree = "<group>"; };
+		FC432C24243787A200070214 /* UANavigatorMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UANavigatorMap.swift; sourceTree = "<group>"; };
+		FC432C26243788D400070214 /* UAWebVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UAWebVC.swift; sourceTree = "<group>"; };
+		FC432C2A24383A2600070214 /* UARepoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UARepoVC.swift; sourceTree = "<group>"; };
+		FC432C2F24384CD600070214 /* HTTP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTP.swift; sourceTree = "<group>"; };
+		FC432C31243850D200070214 /* GitHub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHub.swift; sourceTree = "<group>"; };
 		FC4989232420B560001A3BD8 /* UAKitBase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UAKitBase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC4989262420B560001A3BD8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FC4989282420B560001A3BD8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -67,6 +91,56 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		FC25F9C624446536008691DD /* loading动画 */ = {
+			isa = PBXGroup;
+			children = (
+				FC25F9C724446536008691DD /* globalLoadingAnimation.json */,
+				FC25F9C824446536008691DD /* globalLoadingAnimation */,
+			);
+			path = "loading动画";
+			sourceTree = "<group>";
+		};
+		FC25F9C824446536008691DD /* globalLoadingAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				FC25F9C924446536008691DD /* globalLoadingAnimation_0.png */,
+			);
+			path = globalLoadingAnimation;
+			sourceTree = "<group>";
+		};
+		FC432C2C2438449B00070214 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				FC432C222437756E00070214 /* UATableVC.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		FC432C2D243844A100070214 /* Navigator */ = {
+			isa = PBXGroup;
+			children = (
+				FC432C26243788D400070214 /* UAWebVC.swift */,
+				FC432C24243787A200070214 /* UANavigatorMap.swift */,
+			);
+			name = Navigator;
+			sourceTree = "<group>";
+		};
+		FC432C2E243844BB00070214 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		FC432C3324385CA000070214 /* Net */ = {
+			isa = PBXGroup;
+			children = (
+				FC432C2F24384CD600070214 /* HTTP.swift */,
+				FC432C31243850D200070214 /* GitHub.swift */,
+			);
+			name = Net;
+			sourceTree = "<group>";
+		};
 		FC49891A2420B560001A3BD8 = {
 			isa = PBXGroup;
 			children = (
@@ -88,9 +162,19 @@
 		FC4989252420B560001A3BD8 /* UAKitBase */ = {
 			isa = PBXGroup;
 			children = (
+				FC25F9C624446536008691DD /* loading动画 */,
 				FC4989262420B560001A3BD8 /* AppDelegate.swift */,
 				FC4989282420B560001A3BD8 /* SceneDelegate.swift */,
 				FC49892A2420B560001A3BD8 /* ViewController.swift */,
+				FC25F9CE24448C9A008691DD /* UAAnimationSVG.swift */,
+				FC25F9DC244AD8C0008691DD /* UASplashVC.swift */,
+				FC25F9DE244ADAA0008691DD /* UADimensions.swift */,
+				FC27EB48244F00E500EFA5CE /* UATimerVC.swift */,
+				FC432C2C2438449B00070214 /* Home */,
+				FC432C2E243844BB00070214 /* Utils */,
+				FC432C2D243844A100070214 /* Navigator */,
+				FC432C2A24383A2600070214 /* UARepoVC.swift */,
+				FC432C3324385CA000070214 /* Net */,
 				FC49897C24220317001A3BD8 /* SecondVC.swift */,
 				FC49897A2420F866001A3BD8 /* ContentView.swift */,
 				FC49892C2420B560001A3BD8 /* Main.storyboard */,
@@ -131,6 +215,7 @@
 		FC49891B2420B560001A3BD8 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = UA;
 				LastSwiftUpdateCheck = 1130;
 				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = ZD;
@@ -164,7 +249,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC4989332420B561001A3BD8 /* LaunchScreen.storyboard in Resources */,
+				FC25F9CB24446536008691DD /* globalLoadingAnimation_0.png in Resources */,
 				FC4989302420B561001A3BD8 /* Assets.xcassets in Resources */,
+				FC25F9CA24446536008691DD /* globalLoadingAnimation.json in Resources */,
 				FC49892E2420B560001A3BD8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -218,10 +305,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC27EB49244F00E500EFA5CE /* UATimerVC.swift in Sources */,
 				FC49892B2420B560001A3BD8 /* ViewController.swift in Sources */,
+				FC432C232437756E00070214 /* UATableVC.swift in Sources */,
+				FC25F9DF244ADAA0008691DD /* UADimensions.swift in Sources */,
 				FC49897D24220317001A3BD8 /* SecondVC.swift in Sources */,
+				FC432C32243850D200070214 /* GitHub.swift in Sources */,
+				FC25F9CF24448C9A008691DD /* UAAnimationSVG.swift in Sources */,
 				FC4989272420B560001A3BD8 /* AppDelegate.swift in Sources */,
 				FC2999D3242A39C8000C3402 /* Safe(+).swift in Sources */,
+				FC25F9DD244AD8C0008691DD /* UASplashVC.swift in Sources */,
+				FC432C2B24383A2600070214 /* UARepoVC.swift in Sources */,
+				FC432C3024384CD600070214 /* HTTP.swift in Sources */,
+				FC432C27243788D400070214 /* UAWebVC.swift in Sources */,
+				FC432C25243787A200070214 /* UANavigatorMap.swift in Sources */,
 				FC49897B2420F866001A3BD8 /* ContentView.swift in Sources */,
 				FC4989292420B560001A3BD8 /* SceneDelegate.swift in Sources */,
 				FC2999D4242A39C8000C3402 /* AppInfo.swift in Sources */,
@@ -375,6 +472,8 @@
 				DEVELOPMENT_TEAM = 3GE4G86BZ9;
 				INFOPLIST_FILE = UAKitBase/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_GENERATE_MAP_FILE = YES;
+				LD_MAP_FILE_PATH = "/Users/zhudongdong/Desktop/iOS/$(PRODUCT_NAME)-LinkMap-$(CURRENT_VARIANT)-$(CURRENT_ARCH).txt";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -398,6 +497,7 @@
 				DEVELOPMENT_TEAM = 3GE4G86BZ9;
 				INFOPLIST_FILE = UAKitBase/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_GENERATE_MAP_FILE = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

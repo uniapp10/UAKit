@@ -17,7 +17,12 @@ public enum FontStyle: String {
 }
 
 public extension UIFont {
+    
+    /// 返回自适应屏幕的font
+    /// - Parameters:
+    ///   - style: 样式
+    ///   - size: 大小
     class func font(_ style:FontStyle, size: CGFloat) -> UIFont {
-        return UIFont(name: style.rawValue, size: Scale(size))!
+        return UIFont(name: style.rawValue, size: ScaleW(size))!
     }
 }
